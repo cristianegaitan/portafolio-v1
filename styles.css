@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #111827;
+    border-bottom: 1px solid #1e293b;
+}
+
+header nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+}
+
+header a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+header nav>a {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+header a:hover,
+header a:focus-visible {
+    color: #38bdf8;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section+section {
+    border-top: 1px solid #1e293b;
+}
+
+#inicio {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inicio h1 {
+    margin: 0;
+    color: #38bdf8;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    line-height: 1.1;
+}
+
+h2 {
+    margin-top: 0;
+    color: #38bdf8;
+    font-size: 2rem;
+}
+
+section p {
+    max-width: 750px;
+    color: #cbd5e1;
+}
+
+#habilidades ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+#habilidades li {
+    padding: 0.6rem 1rem;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 999px;
+}
+
+#proyectos article {
+    max-width: 750px;
+    padding: 1.5rem;
+    background-color: #111827;
+    border: 1px solid #334155;
+    border-radius: 0.75rem;
+}
+
+#proyectos h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+#contacto a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#contacto a:hover,
+#contacto a:focus-visible {
+    background-color: #7dd3fc;
+    transform: translateY(-2px);
+}
+
+footer {
+    padding: 1.5rem;
+    background-color: #111827;
+    border-top: 1px solid #1e293b;
+    color: #94a3b8;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    #inicio {
+        min-height: auto;
+        padding: 5rem 0;
+    }
+}
